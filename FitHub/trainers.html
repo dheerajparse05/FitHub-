@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHub Trainers — Meet Our Coaches</title>
+    <meta name="description" content="Meet FitHub's certified trainers, specializing in strength training, yoga, HIIT, and cardio.">
+    <link rel="icon" type="image/webp" href="assets/images/fithub-logo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/trainers.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">FitHub</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="trainers.html" aria-current="page">Trainers</a></li>
+            <li>
+              <a href="cart.html" class="cart-link">
+                Cart
+                <span class="cart-count" hidden>0</span>
+              </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Trainers Section -->
+    <section class="trainers">
+        <h1>Meet Our Trainers</h1>
+        <p class="trainers-subtitle">Certified coaches ready to help you hit your goals.</p>
+        <div class="trainers-grid">
+            <div class="trainer-card">
+                <img src="assets/images/tony-horton.jpg" alt="Tony Horton" loading="lazy">
+                <h3>Tony Horton</h3>
+                <p>Specialization: Strength Training</p>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div class="trainer-card">
+                <img src="assets/images/kira-stokes.webp" alt="Kira Stokes" loading="lazy">
+                <h3>Kira Stokes</h3>
+                <p>Specialization: Yoga &amp; Flexibility</p>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div class="trainer-card">
+                <img src="assets/images/joe-holder.jpg" alt="Joe Holder" loading="lazy">
+                <h3>Joe Holder</h3>
+                <p>Specialization: HIIT</p>
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div class="trainer-card">
+                <img src="assets/images/jeff-cavaliere.jpg" alt="Jeff Cavaliere" loading="lazy">
+                <h3>Jeff Cavaliere</h3>
+                <p>Specialization: Cardio</p>
+                <button class="contact-btn">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> FitHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitHub — Train Smarter, Live Stronger</title>
+  <meta name="description" content="FitHub is your one-stop fitness hub: shop premium gear, follow expert-led training programs, and connect with certified trainers." />
+  <link rel="icon" type="image/webp" href="assets/images/fithub-logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">FitHub</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="trainers.html">Trainers</a></li>
+      <li>
+        <a href="cart.html" class="cart-link">
+          Cart
+          <span class="cart-count" hidden>0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Your Fitness Hub</span>
+      <h1>Train hard. Eat clean. Live better.</h1>
+      <p>Premium gear, expert-led programs, and certified trainers — everything you need to build a stronger version of yourself.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn">Explore Products</a>
+        <a href="programs.html" class="btn btn-outline">View Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Strip -->
+  <section class="features">
+    <div class="feature-card">
+      <span class="feature-num">Shop</span>
+      <h3>Gear that performs</h3>
+      <p>From dumbbells to recovery tools — a curated catalog for every stage of your training.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-num">Programs</span>
+      <h3>Structured training</h3>
+      <p>Strength, cardio, HIIT, and yoga programs built by coaches, not templates.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-num">Trainers</span>
+      <h3>Real accountability</h3>
+      <p>Connect with certified trainers who specialize in the results you're after.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> FitHub. All rights reserved.</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitHub Shop — Gear &amp; Nutrition</title>
+  <meta name="description" content="Shop premium fitness gear, supplements, and accessories at FitHub — from dumbbells to recovery tools.">
+  <link rel="icon" type="image/webp" href="assets/images/fithub-logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="logo">FitHub</a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html" aria-current="page">Shop</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="trainers.html">Trainers</a></li>
+    <li>
+      <a href="cart.html" class="cart-link">
+        Cart
+        <span class="cart-count" hidden>0</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Shop Section -->
+<section class="shop">
+  <h1>The FitHub Shop</h1>
+  <p class="shop-subtitle">Everything you need to train, recover, and perform.</p>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="assets/images/protein.webp" alt="Whey Protein" loading="lazy">
+      <div class="product-info">
+        <h3>Whey Protein</h3>
+        <p>$29.99</p>
+        <button class="add-to-cart" onclick="addToCart('Whey Protein', 29.99, 'assets/images/protein.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/dumbbell.jpg" alt="Dumbbells Set" loading="lazy">
+      <div class="product-info">
+        <h3>Dumbbells Set</h3>
+        <p>$89.00</p>
+        <button class="add-to-cart" onclick="addToCart('Dumbbells Set', 89.0, 'assets/images/dumbbell.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/yoga-mat.avif" alt="Yoga Mat" loading="lazy">
+      <div class="product-info">
+        <h3>Yoga Mat</h3>
+        <p>$19.50</p>
+        <button class="add-to-cart" onclick="addToCart('Yoga Mat', 19.5, 'assets/images/yoga-mat.avif')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/fitness-tracker.jpg" alt="Fitness Tracker" loading="lazy">
+      <div class="product-info">
+        <h3>Fitness Tracker</h3>
+        <p>$59.99</p>
+        <button class="add-to-cart" onclick="addToCart('Fitness Tracker', 59.99, 'assets/images/fitness-tracker.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/resistance-bands.webp" alt="Resistance Bands" loading="lazy">
+      <div class="product-info">
+        <h3>Resistance Bands</h3>
+        <p>$15.99</p>
+        <button class="add-to-cart" onclick="addToCart('Resistance Bands', 15.99, 'assets/images/resistance-bands.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/kettlebell.jpg" alt="Kettlebell" loading="lazy">
+      <div class="product-info">
+        <h3>Kettlebell</h3>
+        <p>$39.99</p>
+        <button class="add-to-cart" onclick="addToCart('Kettlebell', 39.99, 'assets/images/kettlebell.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/shaker-bottle.webp" alt="Shaker Bottle" loading="lazy">
+      <div class="product-info">
+        <h3>Shaker Bottle</h3>
+        <p>$9.99</p>
+        <button class="add-to-cart" onclick="addToCart('Shaker Bottle', 9.99, 'assets/images/shaker-bottle.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/gym-gloves.jpg" alt="Gym Gloves" loading="lazy">
+      <div class="product-info">
+        <h3>Gym Gloves</h3>
+        <p>$12.49</p>
+        <button class="add-to-cart" onclick="addToCart('Gym Gloves', 12.49, 'assets/images/gym-gloves.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/pre-workout.png" alt="Pre-Workout" loading="lazy">
+      <div class="product-info">
+        <h3>Pre-Workout</h3>
+        <p>$24.99</p>
+        <button class="add-to-cart" onclick="addToCart('Pre-Workout', 24.99, 'assets/images/pre-workout.png')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/jump-rope.jpg" alt="Jump Rope" loading="lazy">
+      <div class="product-info">
+        <h3>Jump Rope</h3>
+        <p>$8.99</p>
+        <button class="add-to-cart" onclick="addToCart('Jump Rope', 8.99, 'assets/images/jump-rope.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/foam-roller.webp" alt="Foam Roller" loading="lazy">
+      <div class="product-info">
+        <h3>Foam Roller</h3>
+        <p>$22.00</p>
+        <button class="add-to-cart" onclick="addToCart('Foam Roller', 22.0, 'assets/images/foam-roller.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/medicine-ball.webp" alt="Medicine Ball" loading="lazy">
+      <div class="product-info">
+        <h3>Medicine Ball</h3>
+        <p>$34.99</p>
+        <button class="add-to-cart" onclick="addToCart('Medicine Ball', 34.99, 'assets/images/medicine-ball.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/smart-scale.jpg" alt="Smart Scale" loading="lazy">
+      <div class="product-info">
+        <h3>Smart Scale</h3>
+        <p>$49.99</p>
+        <button class="add-to-cart" onclick="addToCart('Smart Scale', 49.99, 'assets/images/smart-scale.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/workout-tank-top.jpg" alt="Workout Tank Top" loading="lazy">
+      <div class="product-info">
+        <h3>Workout Tank Top</h3>
+        <p>$14.99</p>
+        <button class="add-to-cart" onclick="addToCart('Workout Tank Top', 14.99, 'assets/images/workout-tank-top.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/gym-bag.webp" alt="Gym Bag" loading="lazy">
+      <div class="product-info">
+        <h3>Gym Bag</h3>
+        <p>$27.99</p>
+        <button class="add-to-cart" onclick="addToCart('Gym Bag', 27.99, 'assets/images/gym-bag.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/sweatband.jpg" alt="Sweatband Set" loading="lazy">
+      <div class="product-info">
+        <h3>Sweatband Set</h3>
+        <p>$5.99</p>
+        <button class="add-to-cart" onclick="addToCart('Sweatband Set', 5.99, 'assets/images/sweatband.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/protein-bars-box.jpg" alt="Protein Bars" loading="lazy">
+      <div class="product-info">
+        <h3>Protein Bars (Box)</h3>
+        <p>$18.99</p>
+        <button class="add-to-cart" onclick="addToCart('Protein Bars', 18.99, 'assets/images/protein-bars-box.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/creatine-powder.webp" alt="Creatine Powder" loading="lazy">
+      <div class="product-info">
+        <h3>Creatine Powder</h3>
+        <p>$21.50</p>
+        <button class="add-to-cart" onclick="addToCart('Creatine Powder', 21.5, 'assets/images/creatine-powder.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/electrolyte-drink.webp" alt="Electrolyte Drink" loading="lazy">
+      <div class="product-info">
+        <h3>Electrolyte Drink</h3>
+        <p>$3.99</p>
+        <button class="add-to-cart" onclick="addToCart('Electrolyte Drink', 3.99, 'assets/images/electrolyte-drink.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/ankle-weights.jpg" alt="Ankle Weights" loading="lazy">
+      <div class="product-info">
+        <h3>Ankle Weights</h3>
+        <p>$16.49</p>
+        <button class="add-to-cart" onclick="addToCart('Ankle Weights', 16.49, 'assets/images/ankle-weights.jpg')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/adjustable-bench.webp" alt="Adjustable Bench" loading="lazy">
+      <div class="product-info">
+        <h3>Adjustable Bench</h3>
+        <p>$119.99</p>
+        <button class="add-to-cart" onclick="addToCart('Adjustable Bench', 119.99, 'assets/images/adjustable-bench.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/battle-rope.webp" alt="Battle Rope" loading="lazy">
+      <div class="product-info">
+        <h3>Battle Rope</h3>
+        <p>$49.99</p>
+        <button class="add-to-cart" onclick="addToCart('Battle Rope', 49.99, 'assets/images/battle-rope.webp')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/massage-gun.avif" alt="Massage Gun" loading="lazy">
+      <div class="product-info">
+        <h3>Massage Gun</h3>
+        <p>$89.99</p>
+        <button class="add-to-cart" onclick="addToCart('Massage Gun', 89.99, 'assets/images/massage-gun.avif')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="assets/images/pull-up-bar.jpg" alt="Foam Grip Pull-Up Bar" loading="lazy">
+      <div class="product-info">
+        <h3>Pull-Up Bar</h3>
+        <p>$34.00</p>
+        <button class="add-to-cart" onclick="addToCart('Foam Grip Pull-Up Bar', 34.0, 'assets/images/pull-up-bar.jpg')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; <span id="year"></span> FitHub. All rights reserved.</p>
+</footer>
+
+<script src="js/shop.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

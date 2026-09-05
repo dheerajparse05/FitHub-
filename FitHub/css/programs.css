@@ -1,0 +1,59 @@
+/* FitHub — Programs page */
+
+.programs {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+  text-align: center;
+}
+
+.programs h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.programs-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 44px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.program-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+}
+
+.program-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.program-card h3 {
+  font-size: 1.3rem;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 18px;
+}

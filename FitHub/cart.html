@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitHub Cart — Checkout</title>
+  <meta name="description" content="Review your FitHub cart and check out securely.">
+  <link rel="icon" type="image/webp" href="assets/images/fithub-logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init({
+        publicKey: "H2Kd5zKtNo8TldK-D",
+      });
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="logo">FitHub</a>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="programs.html">Programs</a></li>
+    <li><a href="trainers.html">Trainers</a></li>
+    <li>
+      <a href="cart.html" class="cart-link" aria-current="page">
+        Cart
+        <span class="cart-count" hidden>0</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Cart Section -->
+<section class="cart">
+  <h1>Your Cart</h1>
+
+  <div id="cart-items"></div>
+  <p id="cart-empty" hidden>Your cart is empty. <a href="shop.html">Browse the shop</a> to add items.</p>
+
+  <h3 id="total">Total: $0.00</h3>
+
+  <!-- Customer Details Form -->
+  <h3>Enter Your Details</h3>
+  <form id="checkout-form">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="address" placeholder="Shipping Address" required>
+
+    <h3>Payment Method</h3>
+    <div class="payment-options">
+      <label><input type="radio" name="payment" value="online" id="online" onclick="openPopup()"> Pay Online</label>
+      <label><input type="radio" name="payment" value="cash" id="cash" onclick="hidePopup()"> Cash on Delivery</label>
+    </div>
+
+    <button type="button" onclick="checkout()">Proceed to Checkout</button>
+  </form>
+</section>
+
+<!-- QR Code Popup -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <h3>Scan to Pay</h3>
+    <img src="assets/images/qr.png" alt="QR Code for Payment">
+    <br><br>
+    <button onclick="paymentDone()">Done</button>
+  </div>
+</div>
+
+<!-- Payment Done Popup -->
+<div class="popup-overlay" id="payment-done-popup">
+  <div class="popup-content">
+    <h2>✅ Payment Done!</h2>
+    <button onclick="closePaymentDone()">OK</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; <span id="year"></span> FitHub. All rights reserved.</p>
+</footer>
+
+<script src="js/cart.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

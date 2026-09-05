@@ -1,0 +1,78 @@
+/* FitHub — Login page */
+
+body.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    linear-gradient(180deg, rgba(11, 12, 15, 0.6) 0%, rgba(11, 12, 15, 0.88) 100%),
+    url('../assets/images/gym-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.login-container {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 40px 36px;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 360px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.login-container .logo {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.login-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  color: var(--color-text);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-alt);
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.login-form input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.login-form button {
+  margin-top: 6px;
+}
+
+.signup-link {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.signup-link a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

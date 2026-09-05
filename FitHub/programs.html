@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHub Programs — Strength, Cardio, Yoga &amp; HIIT</title>
+    <meta name="description" content="Explore FitHub's expert-led training programs: Strength Training, Cardio Blast, Yoga & Flexibility, and HIIT.">
+    <link rel="icon" type="image/webp" href="assets/images/fithub-logo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/programs.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">FitHub</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="programs.html" aria-current="page">Programs</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li>
+              <a href="cart.html" class="cart-link">
+                Cart
+                <span class="cart-count" hidden>0</span>
+              </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Program Section -->
+    <section class="programs">
+        <h1>Our Fitness Programs</h1>
+        <p class="programs-subtitle">Structured, coach-built training plans for every goal.</p>
+        <div class="program-grid">
+            <div class="program-card">
+                <img src="assets/images/strength-training.avif" alt="Strength Training" loading="lazy">
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase power with our expert-led strength training sessions.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="program-card">
+                <img src="assets/images/cardio-blast.webp" alt="Cardio Blast" loading="lazy">
+                <h3>Cardio Blast</h3>
+                <p>Boost endurance and burn calories in high-intensity cardio workouts.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="program-card">
+                <img src="assets/images/yoga-flexibility.jpg" alt="Yoga & Flexibility" loading="lazy">
+                <h3>Yoga &amp; Flexibility</h3>
+                <p>Improve balance, flexibility, and peace of mind with our yoga program.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="program-card">
+                <img src="assets/images/hiit.webp" alt="HIIT" loading="lazy">
+                <h3>HIIT</h3>
+                <p>Get fit fast with high-intensity interval training to maximize fat burn.</p>
+                <button>Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> FitHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/nav.js"></script>
+</body>
+</html>

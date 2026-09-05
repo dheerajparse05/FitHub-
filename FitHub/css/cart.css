@@ -1,0 +1,203 @@
+/* FitHub — Cart page */
+
+.cart {
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 32px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.cart h1 {
+  color: var(--color-text);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 28px;
+}
+
+.cart h3 {
+  color: var(--color-text);
+}
+
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#cart-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 24px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px;
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-sm);
+}
+
+.cart-item-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.cart-item-price {
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cart-item-qty button {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item-qty button:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.remove-item-btn {
+  margin-top: 10px;
+  background: transparent;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.remove-item-btn:hover {
+  background-color: var(--color-danger);
+  color: #fff;
+}
+
+#total {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+form#checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-label {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: -6px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-alt);
+  color: var(--color-text);
+}
+
+input[type="text"]::placeholder {
+  color: var(--color-text-muted);
+}
+
+.payment-options {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payment-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: var(--color-accent);
+}
+
+#checkout-form button[type="button"] {
+  margin-top: 10px;
+}
+
+/* Popups */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.popup-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 32px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  animation: popIn 0.25s ease;
+  max-width: 320px;
+  width: 100%;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.popup-content img {
+  width: 180px;
+  margin: 0 auto 20px;
+  border-radius: var(--radius-sm);
+}
+
+.popup-content h2 {
+  color: var(--color-success);
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .cart { padding: 20px; margin: 24px 16px; }
+  .cart-item { flex-direction: column; align-items: flex-start; }
+  #checkout-form button[type="button"] { width: 100%; }
+}
